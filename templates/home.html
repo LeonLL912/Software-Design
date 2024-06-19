@@ -1,0 +1,42 @@
+<!-- This is the html file for the Home page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/project.css">
+</head>
+<div id="headBar">
+    <a href="/" id="logoLink">
+        <img src="/static/logo2.svg" alt="Logo" id="logo" style="height: 50px;">
+    </a>
+    <div class="nav-links">
+        <a href="/map" id="map" onmouseenter="mouseEnterExplore()" onmouseout="mouseOutExplore()">Map</a>
+        <a href="/charts">Charts</a>
+        <a href="/aboutus">About Us</a>
+        <a href="/pirategame">Pirate Game!</a>
+    </div>   
+</div>
+<body>
+    
+
+    <script src="/static/project.js"></script>
+
+    <div id="welcomemessage">
+        <p class = "center-para" style="color:white;">
+            Welcome! This website is designed to provide some information <br>
+            about pirate attacks around the world from 1993 to 2020.
+        </p>
+    </div>
+
+    <p style="text-align:center">
+        <a href="/map"><button id="bigButton" 
+            onmouseenter="mouseEnterExplore()" onmouseout="mouseOutExplore()">
+            Explore
+        </button></a>
+    </p>
+
+</body>
+</html>
